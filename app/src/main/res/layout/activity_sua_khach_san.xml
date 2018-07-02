@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.lavanduc.quangcao.activity.SuaKhachSanActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SỬA THÔNG TIN KHÁCH SẠN"
+        android:textColor="#00a680"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Mã khách sạn" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/edtma"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Tên khách sạn" />
+
+            <EditText
+                android:id="@+id/edtten"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Mã bình luận" />
+
+            <EditText
+                android:id="@+id/edtbinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Địa điểm" />
+
+            <EditText
+                android:id="@+id/edtdiadiem"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Các dịch vụ cung cấp" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1. Wifi" />
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/wifico"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Có"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/wifiko"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="Không"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="2. Bữa sáng" />
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/buasangco"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Có"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/buasangko"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="Không"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <!--Cah-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="3. Điều hòa" />
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/dieuhoaco"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Có"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/dieuhoako"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="Không"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--Cah-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="4. Bể bơi" />
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/beboico"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Có"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/beboiko"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="Không"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--Cah-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="5. Đưa đón" />
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/duadonco"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Có"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/duaddonko"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="Không"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Hình ảnh" />
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/imgHinhOk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:src="@drawable/header1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgchonhinh"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/chonhi"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgchuphinh"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/chuphi"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="2">
+
+                <ru.katso.livebutton.LiveButton
+                    android:id="@+id/btnThem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Thêm"
+                    android:textColor="#fffefe"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:backgroundColor="#00a680"
+                    app:corners="0sp"
+                    app:normalHeight="5dp"
+                    app:pressedHeight="2dp"
+                    app:shadowColor="#b7bac9" />
+
+                <ru.katso.livebutton.LiveButton
+                    android:id="@+id/btnHuy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Hủy"
+                    android:textColor="#fffefe"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    app:backgroundColor="#00a680"
+                    app:corners="0sp"
+                    app:normalHeight="5dp"
+                    app:pressedHeight="2dp"
+                    app:shadowColor="#b7bac9" />
+
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

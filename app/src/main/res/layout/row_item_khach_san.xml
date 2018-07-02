@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/custom_edittext"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/laptop"
+        android:id="@+id/imgks"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/thongtin"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:id="@+id/txttenks"
+        android:layout_gravity="center"
+        android:text="Ten khách sạn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#efefec" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/check_danhgia"
+        android:drawablePadding="8dp"
+        android:id="@+id/txtdanhgiaks"
+        android:layout_gravity="center"
+        android:text="đánh gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

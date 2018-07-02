@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="20"
+    tools:context="com.example.lavanduc.quangcao.activity.ChiTietKhachSanActivity">
+
+    <ScrollView
+        android:layout_weight="18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/laptop"
+                android:id="@+id/imgks"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#ffffff">
+
+            </ViewFlipper>
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+
+                android:textStyle="bold"
+                android:text="Tình trạng phòng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtslphong"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Thời gian bắt đầu" />
+
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+
+                android:textStyle="bold"
+                android:text="Tên khách sạn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txttenks"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Thời gian bắt đầu" />
+
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:textStyle="bold"
+                android:text="Địa điểm khách sạn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtdiadiemks"
+
+                android:drawableLeft="@drawable/place"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Thời gian bắt đầu" />
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:textStyle="bold"
+                android:text="Đánh giá khách sạn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:weightSum="7"
+                >
+
+                <TextView
+                    android:id="@+id/txtdanhgiaks"
+
+
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="5 sao" />
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/sao"
+                        android:visibility="gone"
+                        android:id="@+id/imgmot"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:src="@drawable/sao"
+                        android:visibility="gone"
+                        android:id="@+id/imghai"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@drawable/sao"
+                        android:visibility="gone"
+                        android:id="@+id/imgba"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@drawable/sao"
+                        android:visibility="gone"
+                        android:id="@+id/imgbon"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@drawable/sao"
+                        android:visibility="gone"
+                        android:id="@+id/imgnam"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Dịch vụ cung cấp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:weightSum="5"
+                >
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/wiffi"
+                    android:id="@+id/imgwifi"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/buasang"
+                    android:id="@+id/imgbuasang"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/dieuhoa"
+                    android:id="@+id/imgdieuhoa"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/beboi"
+                    android:id="@+id/imgbeboi"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/duadon"
+                    android:id="@+id/imgduadon"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:id="@+id/txtdichvucungcapks"
+                android:text="đánh giá khách sạn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <!--đây-->
+
+            <TextView
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Bình luận"
+                android:textStyle="bold"
+                android:id="@+id/txtbinhluan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:dividerHeight="25dp"
+                android:divider="#ffffff"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:id="@+id/listViewBinhLuan"
+                android:layout_height="500dp"></ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#efefec" />
+
+            <TextView
+                android:id="@+id/txtbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Nhập bình luận" />
+
+            <EditText
+                android:id="@+id/edtnhapbinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_edittext"
+                 />
+            <Button
+                android:text="Gửi"
+                android:textStyle="bold"
+                android:id="@+id/btnguibl"
+                android:background="#00a680"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content" />
+
+
+        </TableLayout>
+    </ScrollView>
+    <Button
+        android:text="Đặt phòng"
+        android:textStyle="bold"
+        android:id="@+id/btnDatPhong"
+        android:background="#ffcc00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

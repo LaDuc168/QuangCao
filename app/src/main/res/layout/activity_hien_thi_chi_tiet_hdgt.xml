@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.lavanduc.quangcao.activity.HienThiChiTietHDGTActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/khoang_cach_dong"
+        android:text="Tên địa điểm giải trí"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txttenhdgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Thời gian bắt đầu" />
+
+    <ScrollView
+        android:id="@+id/motachitiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_weight="2">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imggt"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:src="@drawable/laptop" />
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#ffffff">
+
+            </ViewFlipper>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Địa điểm"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdiadiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/place"
+                android:drawablePadding="8dp"
+                android:text="Thời gian kết thúc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Lượt thích"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtluotthich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/like"
+                android:drawablePadding="8dp"
+                android:text="Thời gian kết thúc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Thông tin phòng"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtthoigianbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="8dp"
+                android:text="Thời gian bắt đầu" />
+
+            <TextView
+                android:id="@+id/txtthoigiankt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="8dp"
+                android:text="Thời gian kết thúc" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#efefec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Mô tả chi tiết"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtmotachitiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="mô tả chi tiết" />
+
+            <TextView
+                android:id="@+id/txtbinhluan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/khoang_cach_dong"
+                android:text="Bình luận"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listViewBinhLuan"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="25dp"
+                android:divider="#ffffff"
+                android:dividerHeight="25dp"></ListView>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

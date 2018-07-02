@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtTK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NHẬP THÔNG TIN"
+        android:textColor="#00a680"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/edtmakhach"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/taikhoan"
+        android:drawablePadding="15dp"
+        android:hint="Nhập mã khách hàng..." />
+
+    <ru.katso.livebutton.LiveButton
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:text="Hoàn Tất"
+        android:textColor="#0e0e0e"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:backgroundColor="#ffcc00"
+        app:corners="0sp"
+        app:normalHeight="5dp"
+        app:pressedHeight="2dp"
+        app:shadowColor="#b7bac9" />
+
+</LinearLayout>

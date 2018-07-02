@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+        android:id="@+id/nav_dangnhap"
+        android:icon="@drawable/laptop"
+        android:title="Đăng nhập" />
+        <item
+            android:id="@+id/nav_suatt"
+            android:icon="@drawable/laptop"
+            android:title="Sửa thông tin cá nhân" />
+        <item
+            android:id="@+id/nav_khachsan"
+            android:icon="@drawable/map"
+            android:title="Khách sạn" />
+        <item
+            android:id="@+id/nav_hdgt"
+            android:icon="@drawable/time"
+            android:title="Hoạt động giải trí" />
+    </group>
+
+    <item android:title="Tùy chọn">
+        <menu>
+            <item
+                android:id="@+id/nav_lichsu"
+                android:icon="@drawable/map"
+                android:title="Lịch sử giao dịch" />
+            <item
+                android:id="@+id/nav_ttncc"
+                android:icon="@drawable/map"
+                android:title="Thông tin nhà cung cấp" />
+            <item
+                android:id="@+id/nav_capnhat"
+                android:icon="@drawable/map"
+                android:title="Cập nhật" />
+            <item
+                android:id="@+id/nav_thoat"
+                android:icon="@drawable/phone"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+</menu>

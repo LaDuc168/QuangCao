@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.lavanduc.quangcao.activity.SuaKhachHangActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SỬA KHÁCH HÀNG"
+        android:textColor="#00a680"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Mã khách" />
+
+            <EditText
+                android:id="@+id/edtma"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Họ tên" />
+
+            <EditText
+                android:id="@+id/edthoten"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Giới tính" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/radioNam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Nam"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioNu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Nữ"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Ngày sinh" />
+
+            <EditText
+                android:id="@+id/edtngaysinh"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Địa chỉ" />
+
+            <EditText
+                android:id="@+id/edtdiachi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Chọn mã khách sạn" />
+
+            <Spinner
+                android:id="@+id/spinnermaks"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Chọn mã phòng" />
+
+            <Spinner
+                android:id="@+id/spinnermaphong"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"></Spinner>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <ru.katso.livebutton.LiveButton
+                    android:id="@+id/btnSua"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Cập Nhật"
+                    android:textColor="#fffefe"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:backgroundColor="#00a680"
+                    app:corners="0sp"
+                    app:normalHeight="5dp"
+                    app:pressedHeight="2dp"
+                    app:shadowColor="#b7bac9" />
+
+                <ru.katso.livebutton.LiveButton
+                    android:id="@+id/btnHuy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Hủy"
+                    android:textColor="#fffefe"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    app:backgroundColor="#00a680"
+                    app:corners="0sp"
+                    app:normalHeight="5dp"
+                    app:pressedHeight="2dp"
+                    app:shadowColor="#b7bac9" />
+
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

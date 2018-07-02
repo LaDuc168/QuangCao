@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <DatePicker
+        android:id="@+id/datePickerOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"></DatePicker>
+    <ru.katso.livebutton.LiveButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnChonNgay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Chọn"
+        android:textColor="#fdfcfb"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:backgroundColor="#00a680"
+        app:corners="0sp"
+        app:normalHeight="5dp"
+        app:pressedHeight="2dp"
+        app:shadowColor="#c0c0c1" />
+
+</LinearLayout>

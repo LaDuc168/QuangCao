@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lavanduc.quangcao">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DanhSachKhachSan" />
+        <activity android:name=".activity.ChiTietKhachSanActivity" />
+        <activity android:name=".activity.DatPhongActivity" />
+        <activity android:name=".activity.KhachHangThanhToanActivity" />
+        <activity android:name=".activity.HoatDongGTActivity" />
+        <activity android:name=".activity.HienThiChiTietHDGTActivity" />
+        <activity android:name=".activity.NguoiDungActivity" />
+        <activity android:name=".activity.ThemNguoiDungActivity" />
+        <activity android:name=".activity.SuaNguoiDungActivity" />
+        <activity android:name=".activity.KhachHangActivity" />
+        <activity android:name=".activity.SuaKhachHangActivity" />
+        <activity android:name=".activity.ThemHDGTActivity" />
+        <activity android:name=".activity.SuaHDGTActivity" />
+        <activity android:name=".activity.ThemKhachSanActivity" />
+        <activity android:name=".activity.SuaKhachSanActivity" />
+        <activity android:name=".activity.DanhSachPhongActivity">
+
+
+        </activity>
+        <activity android:name=".activity.ThemPhongActivity" />
+        <activity android:name=".activity.SuaPhongActivity" />
+        <activity android:name=".activity.DangNhapActivity"></activity>
+        <activity android:name=".activity.QuanLyActivity"></activity>
+    </application>
+
+</manifest>
